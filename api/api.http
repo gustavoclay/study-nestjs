@@ -1,0 +1,26 @@
+###
+GET http://localhost:3000/orders HTTP/1.1
+
+###
+POST http://localhost:3000/orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": 1000.99
+}
+
+###
+GET http://localhost:3000/orders/1 HTTP/1.1
+
+###
+PATCH http://localhost:3000/orders/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": 2000.99,
+    "status": "approved"
+}
+
+###
+DELETE  http://localhost:3000/orders/e7128699-7ba9-4e8f-88b4-c7016d6624c2 HTTP/1.1
+
