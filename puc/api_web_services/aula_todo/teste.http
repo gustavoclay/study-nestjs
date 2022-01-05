@@ -6,14 +6,28 @@ GET http://localhost:3000/ HTTP/1.1
 GET http://localhost:3000/todos HTTP/1.1
 
 ###
-GET http://localhost:3000/todos/1 HTTP/1.1
+GET http://localhost:3000/todos/61d5f53ddd21846f7ffdaab2 HTTP/1.1
 
 ###
 POST http://localhost:3000/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "study 3",
+    "description": "learning itens",
+    "finished": false
+}
 
 ###
-PUT http://localhost:3000/todos/1 HTTP/1.1
+PUT http://localhost:3000/todos/61d5f5c9723c4872d92bca6d HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "study 2",
+    "description": "learning itens 2",
+    "finished": true
+}
 
 
 ###
-DELETE http://localhost:3000/todos/1 HTTP/1.1
+DELETE http://localhost:3000/todos/61d5f8b9d459b380a928b35c HTTP/1.1

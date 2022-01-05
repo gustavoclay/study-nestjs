@@ -11,7 +11,7 @@ module.exports = {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-            .then((res) => console.log(`MongoDB connected ${JSON.stringify(res)}`))
-            .catch((err) => console.log(`MongoDB error ${JSON.stringify(err)}`));
+            .then((res) => console.log(`MongoDB connected ${res}`))
+            .catch((err) => console.log(`MongoDB error ${err}`));
     }
 }
