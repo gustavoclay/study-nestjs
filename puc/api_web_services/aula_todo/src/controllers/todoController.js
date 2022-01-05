@@ -1,6 +1,7 @@
 
 exports.get = (req, res) => {
-    res.send('OK GET');
+    const id = req.params.id;
+    res.send(`OK GET id = ${id}`);
 }
 
 exports.getAll = (req, res) => {
